@@ -250,11 +250,50 @@
         </p>
       </div>
 
-      <form
+  <form
   class="contact-form"
   action="https://formsubmit.co/tiveradigitals@gmail.com"
   method="POST"
 >
+
+  <input
+    type="hidden"
+    name="_captcha"
+    value="false"
+  >
+
+  <input
+    type="hidden"
+    name="_next"
+    value="thankyou.html"
+  >
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+  >
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  >
+
+  <textarea
+    name="message"
+    rows="6"
+    placeholder="Your Message"
+    required
+  ></textarea>
+
+  <button type="submit" class="btn">
+    Send Message
+  </button>
+
+</form>
 
   <!-- DISABLE CAPTCHA -->
   <input type="hidden" name="_captcha" value="false">
