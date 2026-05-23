@@ -250,22 +250,23 @@
         </p>
       </div>
 
-  <form
+  
+
+  <!-- DISABLE CAPTCHA -->
+<form
   class="contact-form"
   action="https://formsubmit.co/tiveradigitals@gmail.com"
   method="POST"
 >
 
-  <input
-    type="hidden"
-    name="_captcha"
-    value="false"
-  >
+  <!-- DISABLE CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
 
+  <!-- SUCCESS PAGE -->
   <input
     type="hidden"
     name="_next"
-    value="thankyou.html"
+    value="https://joshua-oyelami.github.io/thankyou.html"
   >
 
   <input
@@ -273,14 +274,14 @@
     name="name"
     placeholder="Your Name"
     required
-  >
+  />
 
   <input
     type="email"
     name="email"
     placeholder="Your Email"
     required
-  >
+  />
 
   <textarea
     name="message"
@@ -294,44 +295,6 @@
   </button>
 
 </form>
-
-  <!-- DISABLE CAPTCHA -->
-  <input type="hidden" name="_captcha" value="false">
-
-  <!-- SUCCESS PAGE -->
-  <input
-  type="hidden"
-  name="_next"
-  value="thankyou.html"
-  method="POST"
-/>
-
-  <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-  />
-
-  <input
-    type="email"
-    name="email"
-    placeholder="Your Email"
-    required
-  />
-
-  <textarea
-    name="message"
-    rows="6"
-    placeholder="Your Message"
-    required
-  ></textarea>
-
-  <button type="submit" class="btn">
-    Send Message
-  </button>
-
-      </form>
 
     </div>
   </section>
