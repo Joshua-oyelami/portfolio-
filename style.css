@@ -354,3 +354,104 @@ footer{
         cursor:pointer;
     }
 }
+
+    /* STICKY HEADER */
+
+.header.sticky{
+    background:rgba(15, 23, 42, 0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* ACTIVE NAV LINK */
+
+.navbar a.active{
+    color:#38bdf8;
+}
+
+/* REVEAL ANIMATION */
+
+.hero-text,
+.hero-image,
+.about,
+.skill-card,
+.cert-card,
+.experience-card,
+.contact-container{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+.show{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+}
+
+/* SCROLL TOP BUTTON */
+
+.scroll-top{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    color:#0f172a;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    opacity:0;
+    pointer-events:none;
+    transition:0.3s;
+    z-index:1000;
+}
+
+.show-scroll{
+    opacity:1;
+    pointer-events:auto;
+}
+
+/* HOVER EFFECTS */
+
+.cert-card,
+.skill-card,
+.experience-card{
+    transition:0.4s ease;
+}
+
+.cert-card:hover,
+.skill-card:hover,
+.experience-card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 10px 30px rgba(56,189,248,0.2);
+}
+
+/* BUTTON ANIMATION */
+
+.btn,
+.btn-outline{
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(56,189,248,0.3);
+}
+
+.btn-outline:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+/* IMAGE EFFECT */
+
+.hero-image img{
+    transition:0.5s ease;
+}
+
+.hero-image img:hover{
+    transform:scale(1.05);
+        }
