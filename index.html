@@ -252,37 +252,39 @@
 
   
 
-  <!-- DISABLE CAPTCHA -->
-<form
+<form 
   class="contact-form"
   action="https://formsubmit.co/tiveradigitals@gmail.com"
   method="POST"
 >
 
-  <!-- DISABLE CAPTCHA -->
+  <!-- Disable Captcha -->
   <input type="hidden" name="_captcha" value="false">
 
-  <!-- SUCCESS PAGE -->
-  <input
-    type="hidden"
-    name="_next"
+  <!-- Redirect After Submit -->
+  <input 
+    type="hidden" 
+    name="_next" 
     value="thankyou.html"
   >
 
+  <!-- Name -->
   <input
     type="text"
     name="name"
     placeholder="Your Name"
     required
-  />
+  >
 
+  <!-- Email -->
   <input
     type="email"
     name="email"
     placeholder="Your Email"
     required
-  />
+  >
 
+  <!-- Message -->
   <textarea
     name="message"
     rows="6"
@@ -290,6 +292,7 @@
     required
   ></textarea>
 
+  <!-- Submit -->
   <button type="submit" class="btn">
     Send Message
   </button>
